@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import axios from 'axios'
 import LineChart from './components/LineChart';
+import process from 'process';
 
 export interface CompanyData {
   key: string;
@@ -14,7 +15,7 @@ export interface CompanyData {
 }
 
 
-const API_KEY = `240a2d3d06a4fbc86969be09dcb48312`
+const API_KEY = import.meta.env.VITE_API_KEY
 
 function App() {
   const [data, setData] = useState<CompanyData[]>()
@@ -31,7 +32,6 @@ function App() {
           }
         }
       )
-      console.log(result.data.companies)
       setData(result.data.companies)
     }
 
