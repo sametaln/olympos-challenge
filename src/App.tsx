@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import axios from 'axios'
 import LineChart from './components/LineChart';
-import process from 'process';
 
 export interface CompanyData {
   key: string;

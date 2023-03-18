@@ -10,7 +10,7 @@ import {
     setupTooltip,
     updateYAxis
 } from '../utils/utils';
-import { WIDTH, HEIGHT } from '../constants/CONSTANTS';
+import { WIDTH, HEIGHT } from '../constants/constant';
 
 function LineChart({ data }: { data: CompanyData[] }) {
     const svgRef = useRef<SVGSVGElement>(null);

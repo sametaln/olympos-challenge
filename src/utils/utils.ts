@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import { NumberValue } from 'd3';
 import { CompanyData } from '../App';
-import { MARGIN, INNER_WIDTH, INNER_HEIGHT } from '../constants/CONSTANTS';
+import { MARGIN, INNER_WIDTH, INNER_HEIGHT } from '../constants/constant';
 
 const createScales = (data: CompanyData[]) => {
     const xScale = d3.scalePoint()
